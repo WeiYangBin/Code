@@ -14,3 +14,11 @@ class Solution:
                 return i
         return -1
 ```
+或者是直接调用list的index方法 配套上try,except会利用更短的time
+```
+try:
+      index = haystack.index(needle)
+      return index
+except:
+      return -1
+```
