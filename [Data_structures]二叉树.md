@@ -1,5 +1,5 @@
-  ```
-  class BinTreeNode(object):
+```
+class BinTreeNode(object):
     def __init__(self, data, left=None, right=None):
         self.data, self.left, self.right = data, left, right
 
@@ -28,14 +28,36 @@ class BinTree(object):
 
     def preorder_travel(self, subtree):
         """
-        先(根)序变量
+        先(根)序变量   根左右
         :param subtree:
         :return:
         """
         if subtree is not None:
-            print(subtree.data)
+            print(subtree.data, end=' ')
             self.preorder_travel(subtree.left)
             self.preorder_travel(subtree.right)
+
+    def inorder_travel(self, subtree):
+        """
+        中序遍历      左根右
+        :param subtree:
+        :return:
+        """
+        if subtree is not None:
+            self.inorder_travel(subtree.left)
+            print(subtree.data, end=' ')
+            self.inorder_travel(subtree.right)
+
+    def postorder_travel(self, subtree):
+        """
+        后序遍历     左右根
+        :param subtree:
+        :return:
+        """
+        if subtree is not None:
+            self.postorder_travel(subtree.left)
+            self.postorder_travel(subtree.right)
+            print(subtree.data, end=' ')
 
     def layer_travel(self, subtree):
         """
@@ -47,7 +69,7 @@ class BinTree(object):
         next_nodes = []
         while cur_nodes or next_nodes:
             for node in cur_nodes:
-                print(node.data)
+                print(node.data, end=' ')
                 if node.left:
                     next_nodes.append(node.left)
                 if node.right:
@@ -69,6 +91,11 @@ node_list = [
 ]
 
 btree = BinTree.build_from(node_list)
-#btree.preorder_travel(btree.root)
+btree.preorder_travel(btree.root)
+print(' ')
+btree.inorder_travel(btree.root)
+print(' ')
+btree.postorder_travel(btree.root)
+print(' ')
 btree.layer_travel(btree.root)
-  ```
+```
