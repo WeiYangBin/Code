@@ -1,18 +1,16 @@
-思路比较简单就是利用list的切片方法进行解答便可
+思路比较简单直接遍历 暴力求解
 ```
 class Solution:
-    def strStr(self, haystack, needle):
-        """
-        :type haystack: str
-        :type needle: str
-        :rtype: int
-        """
-        hlen = len(haystack)
-        nlen = len(needle)
-        for i in range(hlen - nlen + 1):
-            if haystack[i:i+nlen] == needle:
+    def strStr(self, haystack: str, needle: str) -> int:
+        if len(needle) == 0:
+            return 0
+        if len(haystack) == 0:
+            return -1
+        for i in range(len(haystack)):
+            if haystack[i:i+len(needle)] == needle:
                 return i
         return -1
+                    
 ```
 或者是直接调用list的index方法 配套上try,except会利用更短的time
 ```
