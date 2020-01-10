@@ -1,3 +1,3 @@
 # leetcode
 
-每天一题
+Provide one algorithm solution per day
