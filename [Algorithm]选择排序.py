@@ -1,4 +1,4 @@
-```
+
 def select_sort(seq):
     n = len(seq)
     for i in range(n):
@@ -12,5 +12,3 @@ def select_sort(seq):
             seq[i], seq[min_] = seq[min_], seq[i]
 
     return seq
-
-```
