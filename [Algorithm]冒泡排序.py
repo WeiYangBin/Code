@@ -1,4 +1,3 @@
-```
 def bubble_sort(seq):
     n = len(seq)
     for i in range(n - 1):
@@ -11,4 +10,3 @@ def bubble_sort(seq):
 
 seq = [3, 2, 1, 0, 4, 5, 6]
 print(bubble_sort(seq))
-```
