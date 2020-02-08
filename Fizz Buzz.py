@@ -1,4 +1,3 @@
-```
 class Solution(object):
     def fizzBuzz(self, n):
         """
@@ -17,4 +16,3 @@ class Solution(object):
                 l.append(str(i))
                 
         return l
-```
