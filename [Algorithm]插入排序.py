@@ -1,4 +1,4 @@
-```
+
 def insert_sort(seq):
     n = len(seq)
     print(seq)
@@ -11,4 +11,4 @@ def insert_sort(seq):
         seq[pos] = value
         print(seq)
     return seq
-```
+
