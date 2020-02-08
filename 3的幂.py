@@ -1,5 +1,6 @@
+"""
 循环便可
-```
+"""
 class Solution(object):
     def isPowerOfThree(self, n):
         """
@@ -11,4 +12,3 @@ class Solution(object):
         while n % 3 == 0:
             n //= 3
         return n == 1
-```
