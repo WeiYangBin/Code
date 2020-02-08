@@ -1,4 +1,4 @@
-```
+
 def merge_sorted_list(sorted_a, sorted_b):
     length_a, length_b = len(sorted_a), len(sorted_b)
     a = b = 0
@@ -30,4 +30,4 @@ def merge_sort(seq):
 
 seq = [6, 5, 4, 3, 2, 1]
 print(merge_sort(seq))
-```
+
