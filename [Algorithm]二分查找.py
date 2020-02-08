@@ -1,4 +1,4 @@
-```
+
 def binary_search(sorted_array, val):
     if not sorted_array:
         return -1
@@ -15,4 +15,4 @@ def binary_search(sorted_array, val):
         else:
             start = mid + 1
     return -1
-```
+
