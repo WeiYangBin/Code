@@ -1,4 +1,4 @@
-```
+
 # Method:1
 def quick_sort(seq):
 
@@ -38,6 +38,3 @@ def partition(seq, beg, end):
 
     seq[pivot_index], seq[right] = seq[right], seq[pivot_index]
     return right
-
-
-```
