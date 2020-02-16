@@ -1,5 +1,6 @@
+"""
 用了一个dp不行,不要两个，卡了
-```
+"""
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
         if not nums:   
@@ -12,4 +13,4 @@ class Solution:
             res = max(res, curMax)
         
         return res
-```
+
